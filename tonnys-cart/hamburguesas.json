@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nombre": "American",
+    "tipo": "doble",
+    "precio": 730,
+    "descripcion": "Doble medallón, cheddar x4, cebolla morada, lechuga, tomate y salsa Tonny's",
+    "img": "./img/American.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Bacon",
+    "tipo": "doble",
+    "precio": 750,
+    "descripcion": "Doble medallón, cheddar x4, bacon, salsa Tonny's",
+    "img": "./img/Bacon.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Bacon Simple",
+    "tipo": "simple",
+    "precio": 630,
+    "descripcion": "1 medallón, cheddar x2, bacon, salsa Tonny's",
+    "img": "./img/BaconSimple.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "BaconTriple",
+    "tipo": "triple",
+    "precio": 930,
+    "descripcion": "Triple medallón, cheddar x4, bacon y salsa Tonny's",
+    "img": "./img/BaconTriple.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Cheese",
+    "tipo": "doble",
+    "precio": 700,
+    "descripcion": "Doble medallón, cheddar x4, cebolla morada, salsa Tonny's",
+    "img": "./img/Cheese.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "CheeseSimple",
+    "tipo": "simple",
+    "precio": 580,
+    "descripcion": "Medallón x1, cheddar x2, cebolla morada, salsa Tonny's",
+    "img": "./img/CheeseSimple.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "CheeseTriple",
+    "tipo": "triple",
+    "precio": 850,
+    "descripcion": "Triple medallón, cheddar x4, cebolla morada, salsa Tonny's",
+    "img": "./img/CheeseTriple.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Crispy",
+    "tipo": "doble",
+    "precio": 850,
+    "descripcion": "Doble medallón, cheddar x4, cebolla crispy, bacon, salsa barbacoa",
+    "img": "./img/Crispy.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Lima",
+    "tipo": "simple",
+    "precio": 730,
+    "descripcion": "Medallón notchicken x1, cheddar x2 y mayonesa cítrica",
+    "img": "./img/Lima.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Lio",
+    "tipo": "doble",
+    "precio": 730,
+    "descripcion": "Doble medallón, cheddar x4, cebolla grillada",
+    "img": ""
+  }
+]

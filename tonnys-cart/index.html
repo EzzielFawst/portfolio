@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.png" />
+    <title>Tonny's</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form1">
+        <div class="banner">
+          <img src="./img/logo-resize-bgremoved.png" />
+          <h3>HAMBURGUESAS</h3>
+        </div>
+        <div id="hamburguesas"></div>
+
+        <div class="btn-box">
+          <button type="button" id="next1">Siguiente</button>
+        </div>
+      </form>
+
+      <form id="form2">
+        <div class="banner">
+          <h3>ACOMPAÑAMIENTO</h3>
+        </div>
+        <div id="papas"></div>
+
+        <div class="btn-box">
+          <button type="button" id="back1">Volver</button>
+          <button type="button" id="next2">Siguiente</button>
+        </div>
+      </form>
+
+      <form id="form3">
+        <div class="banner">
+          <h3>CARRITO</h3>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="carrito"></tbody>
+        </table>
+
+        <h3 id="total"></h3>
+
+        <div class="btn-box">
+          <button type="button" id="back2">Volver</button>
+          <button type="button" id="next3">Siguiente</button>
+        </div>
+      </form>
+
+      <form id="form4">
+        <div class="banner">
+          <h3>DATOS PERSONALES</h3>
+        </div>
+        <div class="datos">
+          <label class="label" for="nombreApellido">Nombre y Apellido</label>
+          <input
+            id="nombreApellido"
+            class="envioInput"
+            type="text"
+            placeholder="*Obligatorio"
+            required
+          />
+          <label class="label" for="tipoDePedido">Tipo de pedido</label>
+          <select id="tipoDePedido">
+            <option value="0">Envío ($100)</option>
+            <option value="1">Retiro por local</option>
+          </select>
+          <div id="envio">
+            <label class="label" for="direccion">Dirección</label>
+            <input
+              id="direccion"
+              class="envioInput"
+              type="text"
+              placeholder="*Obligatorio"
+              required
+            />
+            <label class="label" for="comentario">Comentario</label>
+            <input
+              id="comentario"
+              class="envioInput"
+              type="text"
+              placeholder="Información adicional"
+            />
+          </div>
+        </div>
+
+        <div class="btn-box">
+          <button type="button" id="back3">Volver</button>
+          <button type="button" id="enviar">Enviar</button>
+        </div>
+      </form>
+
+      <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>Paso 1</small></div>
+        <div class="step-col"><small>Paso 2</small></div>
+        <div class="step-col"><small>Paso 3</small></div>
+        <div class="step-col"><small>Paso 4</small></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

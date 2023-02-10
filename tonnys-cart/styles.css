@@ -1,0 +1,250 @@
+:root {
+  --container-width: 360px;
+  --container-height: 500px;
+  --container-margin: 3% auto;
+  --container-background: #fff;
+  --h3-color: #fff;
+  --container-form-width: 320px; /** --container-width - 40px */
+  --form-border-bottom-color: #999;
+  --placeholder-color: #777;
+  --form-button-width: 110px;
+  --form-button-height: 35px;
+  --color1: #69a2ec;
+  --color2: #d58de5;
+  --form-button-color: #fff;
+  --step-row-width: 360px; /** --container-width */
+  --step-row-height: 30px;
+  --step-col-width: 90px; /** --container-width / 4 */
+  --card-width: 130px;
+  --card-img-width: 130px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: var(--container-width);
+  height: var(--container-height);
+  margin: var(--container-margin);
+  background: var(--container-background);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner {
+  background: url(./img/banner-resize.jpg) center;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+.banner img {
+  width: 50px;
+  position: absolute;
+  left: 0;
+}
+
+h3 {
+  text-align: center;
+  color: var(--h3-color);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.container form {
+  width: var(--container-form-width);
+  position: absolute;
+  top: 35px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+form #hamburguesas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 350px;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+form #papas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+form input {
+  width: 80%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid var(--form-border-bottom-color);
+  outline: none;
+  background: transparent;
+}
+
+form #hamburguesas input,
+form #papas input {
+  width: 80%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid var(--form-border-bottom-color);
+  outline: none;
+  background: transparent;
+  position: inherit;
+}
+
+form #hamburguesas .card,
+form #papas .card {
+  width: var(--card-width);
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form #hamburguesas .card h5,
+form #papas .card h5 {
+  text-align: center;
+}
+
+form #hamburguesas .card h5 span,
+form #papas .card h5 span {
+  color: green;
+}
+
+form #hamburguesas .card p,
+form #papas .card p {
+  font-size: small;
+  margin-left: 10px;
+}
+
+form #hamburguesas .card img,
+form #papas .card img {
+  text-align: center;
+  width: var(--card-img-width);
+}
+
+::placeholder {
+  color: var(--placeholder-color);
+  font-size: small;
+}
+
+#tipoDePedido {
+  width: 93.8%;
+}
+
+.btn-box {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+form button {
+  width: var(--form-button-width);
+  height: var(--form-button-height);
+  margin: 0 10px;
+  background: linear-gradient(to right, var(--color1), var(--color2));
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#form1 {
+  left: 20px;
+}
+
+#form2 {
+  left: 450px;
+}
+
+#form3 {
+  left: 450px;
+}
+
+#form4 {
+  left: 450px;
+}
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.step-row {
+  width: var(---step-row-width);
+  height: var(--step-row-height);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
+}
+
+.step-col {
+  width: var(--step-col-width);
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+#progress {
+  position: absolute;
+  height: 100%;
+  width: var(--step-col-width);
+  background: linear-gradient(to right, var(--color1), var(--color2));
+  transition: 1s;
+}
+
+#progress::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  border-left: 10px solid var(--color2);
+}
+
+table {
+  width: 320px;
+}
+
+table td {
+  text-align: center;
+}
+
+#envio {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: small;
+  margin-top: 10px;
+}
+.envioInput {
+  width: 90%;
+  border: 1px solid var(--color1);
+  padding: 5px;
+  margin: 0;
+}
