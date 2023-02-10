@@ -90,12 +90,12 @@ body {
 .proyects ul .left-li {
   padding: 0 5px 10px;
   width: 33.32%;
-  height: 110px;
+  height: 120px;
 }
 .proyects ul .right-li {
   padding: 0 5px 10px;
   width: 66.64%;
-  height: 110px;
+  height: 120px;
 }
 .proyects ul li .proyect_item {
   display: flex;
