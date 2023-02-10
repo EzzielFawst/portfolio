@@ -1,7 +1,7 @@
 const app = async () => {
-  const hamburFetch = await fetch("/tonnys-cart/hamburguesas.json");
+  const hamburFetch = await fetch("https://ezzielfawst.github.io/portfolio/tonnys-cart/hamburguesas.json");
   const hamburguesasMenu = await hamburFetch.json();
-  const papasFetch = await fetch("/tonnys-cart/papas.json");
+  const papasFetch = await fetch("https://ezzielfawst.github.io/portfolio/tonnys-cart/papas.json");
   const papasMenu = await papasFetch.json();
 
   let hamburguesas = "";
